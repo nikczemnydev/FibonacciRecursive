@@ -4,7 +4,11 @@ public class FibonacciRecursive {
     static int nextInSeq = 0;
     static int seqLimit = 1000000;
 
-    public static void main(String[] args) { FibonacciRecursive(); }
+    public static void main(String[] args) {
+        System.out.println(a + " " + b);
+
+        FibonacciRecursive();
+    }
 
     static void FibonacciRecursive() {
         nextInSeq = a + b;
@@ -12,6 +16,8 @@ public class FibonacciRecursive {
         if (nextInSeq < seqLimit) {
             a = b;
             b = nextInSeq;
+
+            System.out.println(" " + nextInSeq);
             FibonacciRecursive();
         }
     }
