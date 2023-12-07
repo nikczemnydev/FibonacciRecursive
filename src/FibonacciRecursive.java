@@ -4,7 +4,17 @@ public class FibonacciRecursive {
     static int nextInSeq = 0;
     static int seqLimit = 1000000;
 
-    static void FibonacciRecursive() {
+    public static void main(String[] args) {
         FibonacciRecursive();
+    }
+
+    static void FibonacciRecursive() {
+        nextInSeq = a + b;
+
+        if (nextInSeq < seqLimit) {
+            a = b;
+            b = nextInSeq;
+            FibonacciRecursive();
+        }
     }
 }
